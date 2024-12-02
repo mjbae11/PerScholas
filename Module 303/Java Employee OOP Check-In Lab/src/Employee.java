@@ -1,13 +1,14 @@
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Employee
 {
     //fields
-    private String firstName;
-    private String lastName;
-    private String title;
-    private double payRate;
-    private double weeklySalary;
+    protected String firstName;
+    protected String lastName;
+    protected String title;
+    protected double payRate;
+    protected double weeklySalary;
 
     // constructors
     public Employee()
@@ -77,6 +78,10 @@ public class Employee
 
 // methods! :)
 
+    public double calculateSalary()
+    {
+        return 0.0;
+    }
     // // [firstName=John, lastName=Doe, title=Software Engineer, payRate=50.0]
     @Override
     public String toString()
@@ -109,5 +114,43 @@ public class Employee
     {
         weeklySalary = payRate * 40;
         return weeklySalary;
+    }
+
+    public void inputEmployee()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter employee type (salaried/hourly): ");
+        String employeeType = scanner.nextLine();
+        System.out.print("Enter the first name: ");
+        firstName = scanner.nextLine();
+        System.out.print("Enter the last name: ");
+        lastName = scanner.nextLine();
+        System.out.print("Enter the title: ");
+        title = scanner.nextLine();
+        switch (employeeType)
+        {
+            case "salaried":
+            {
+                System.out.print("Enter annual salary: ");
+                payRate = scanner.nextDouble();
+                SalaryEmp employee = new SalaryEmp(firstName, lastName, title, payRate);
+                System.out.println();
+                employee.display();
+                break;
+            }
+            case "hourly":
+            {
+                System.out.print("Enter hourly salary: ");
+                payRate = scanner.nextDouble();
+                System.out.print("Enter hours worked: ");
+                int hours = scanner.nextInt();
+                HourlyEmp employee = new HourlyEmp(firstName, lastName, title, payRate, hours);
+                System.out.println();
+                employee.display();
+                break;
+            }
+        }
+
+
     }
 }
