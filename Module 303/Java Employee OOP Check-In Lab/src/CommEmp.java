@@ -16,15 +16,7 @@ public class CommEmp extends Employee
     @Override
     public double calculateSalary()
     {
-        if (totalSales >= MIN_SALES_FOR_COMMISSION)
-        {
-            // hourly pay + sales commission
-            return (payRate * hoursWorked) + (totalSales * COMMISSION_RATE);
-        } else
-        {
-            // hourly pay
-            return (payRate * hoursWorked);
-        }
+        return totalSales >= MIN_SALES_FOR_COMMISSION ? (payRate * hoursWorked) + (totalSales * COMMISSION_RATE) : (payRate * hoursWorked);
     }
 
     public void display()
@@ -37,6 +29,7 @@ public class CommEmp extends Employee
         {
             System.out.printf("Not enough sales, broke, fired Salary: $%.2f\n", calculateSalary());
         }
+        // totalSales >= MIN_SALES_FOR_COMMISSION? System.out.printf("Commissioned Salary: $%.2f\n", calculateSalary()) : System.out.printf("Not enough sales, broke, fired Salary: $%.2f\n", calculateSalary())
 
     }
 
