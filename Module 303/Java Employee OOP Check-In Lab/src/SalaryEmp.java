@@ -1,6 +1,6 @@
 public class SalaryEmp extends Employee
 {
-    private final int AMOUNT_OF_BI_MONTHLY_PAYMENTS_ANNUALLY = 6;
+    private final int AMOUNT_OF_BI_MONTHLY_PAYMENTS_ANNUALLY = 24;
 
     public SalaryEmp(String firstName, String lastName, String title, double payRate)
     {

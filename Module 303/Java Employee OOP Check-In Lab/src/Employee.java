@@ -119,7 +119,7 @@ public class Employee
     public void inputEmployee()
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter employee type (salaried/hourly): ");
+        System.out.print("Enter employee type (salaried/hourly/commissioned): ");
         String employeeType = scanner.nextLine();
         System.out.print("Enter the first name: ");
         firstName = scanner.nextLine();
@@ -149,8 +149,23 @@ public class Employee
                 employee.display();
                 break;
             }
+            case "commissioned":
+            {
+                System.out.print("Enter hourly salary: ");
+                payRate = scanner.nextDouble();
+                System.out.println("Enter amount of hours: ");
+                int hours = scanner.nextInt();
+                System.out.print("Enter amount of sales: ");
+                int totalSales = scanner.nextInt();
+                CommEmp employee = new CommEmp(firstName, lastName, title, payRate, hours, totalSales);
+                System.out.println();
+                // if
+
+                employee.display();
+                // employee.display(totalSales)
+                break;
+            }
         }
-
-
+        scanner.close();
     }
 }
