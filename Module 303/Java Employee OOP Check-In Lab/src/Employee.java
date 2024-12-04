@@ -11,11 +11,6 @@ public class Employee
     protected double weeklySalary;
 
     // constructors
-    public Employee()
-    {
-
-    }
-
     public Employee(String firstName, String lastName, String title, double payRate)
     {
         this.firstName = firstName;
