@@ -34,5 +34,15 @@ public class LinkedListExample
         Object firstvar2 = linkedlist.get(0);
         System.out.println("First element after setting: " + firstvar2);
 
+        /* Remove first and last element */
+        linkedlist.removeFirst();
+        linkedlist.removeLast();
+        System.out.println("Linked list content after removal : " + linkedlist);
+        
+        /* Add to a position and remove from a position */
+        linkedlist.add(0, "Newly added item");
+        linkedlist.remove(2);
+        System.out.println("Final content after adding and removing: " + linkedlist);
+
     }
 }
