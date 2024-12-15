@@ -11,6 +11,8 @@ public class MainComparator
         numbers.put("Third", 3);
         numbers.put("Fourth", 4);
         System.out.println("TreeMap: " + numbers);
+
+
     }
 
 
