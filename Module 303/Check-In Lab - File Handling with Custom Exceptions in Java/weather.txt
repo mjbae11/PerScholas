@@ -1,0 +1,5 @@
+ Monday:Sunny
+ Tuesday:Rainy
+ Wednesday:Cloudy
+ Thursday:Windy
+ Friday:Snowy
