@@ -7,7 +7,8 @@ public class WeatherReader
     Step 1: Method to check if the file exists, if file does not exists it throws and
     will throw a WeatherFileNotFoundException
     */
-    public void checkFileExists(File file){
+    public void checkFileExists(File file)
+    {
         try
         {
             if (file.exists() == false)
