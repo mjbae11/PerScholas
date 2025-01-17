@@ -6,7 +6,6 @@ import daointerface.impl.CustomerDaoImpl;
 import daointerface.impl.ItemDaoImpl;
 import model.Customer;
 import model.Item;
-import service.RecordService;
 
 import java.util.ArrayList;
 
@@ -45,7 +44,6 @@ public class Main
         //items
         ItemDao itemDao = new ItemDaoImpl();
         System.out.println("--------- inserting item records ----------");
-        ArrayList<Item> items = new ArrayList<>();
         // creating items
         Item i1 = new Item();
         i1.setName("Noor");
