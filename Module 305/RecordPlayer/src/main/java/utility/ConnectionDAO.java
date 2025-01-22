@@ -13,7 +13,7 @@ public class ConnectionDAO
 
             final String dburl = "jdbc:mysql://localhost:3306/recordstore";
             final String user = "root";
-            final String password = "monkeyboy";
+            final String password = "input password here";
         try
         {
             con = DriverManager.getConnection(dburl, user, password);
