@@ -11,7 +11,7 @@
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/hibernatestudentdb?createDatabaseIfNotExist=true</property>
         <property name="connection.username">root</property>
-        <property name="connection.password">monkeyboy</property>
+        <property name="connection.password">input password here</property>
 
         <!-- MySQL DB dialect -->
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>

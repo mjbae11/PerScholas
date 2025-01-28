@@ -10,7 +10,7 @@ public class DatabaseConnector {
     public static void main(String[] args) throws ClassNotFoundException {
         String dburl = "jdbc:mysql://localhost:3306/classicmodels";
         String user = "root";
-        String password = "monkeyboy";
+        String password = "input password here";
         System.out.println("-------- MySQL JDBC Connection Demo ------------");
 
         try {
