@@ -113,6 +113,4 @@ public class UserController
         session.close();
         factory.close();
     }
-
-
 }
